@@ -85,14 +85,17 @@
 }
 
 .cece .kanan .bgcover {
-    margin: auto;
     height: 350px;
+}
+
+.cece .kanan .bgcover img {
+    margin: auto;
     width: 100%;
-    background-image: url("http://localhost:3000/bg.png");
+    /* background-image: url("http://localhost:3000/bg.png"); */
     -webkit-animation: liquid 7s ease-in-out infinite;
     animation: liquid 7s ease-in-out infinite;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: var(--colorgrey);
