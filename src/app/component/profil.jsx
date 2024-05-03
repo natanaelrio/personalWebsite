@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable react/no-unescaped-entities */
 import styles from '@/app/component/profil.module.css'
 import Image from 'next/image';
