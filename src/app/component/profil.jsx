@@ -32,7 +32,7 @@ export default function ProfilPage() {
             <div className={styles.kanan}>
                 <div className={styles.shape}>
                     <div className={styles.bgcover}>
-                        <Image src='http://localhost:3000/bg.png' alt='wkwk' width={500} height={350} ></Image>
+                        <Image src={`${process.env.NEXT_PUBLIC_URL}/bg.png`} alt='wkwk' width={500} height={350} ></Image>
                     </div>
                 </div>
             </div>

@@ -89,6 +89,7 @@
 }
 
 .cece .kanan .bgcover img {
+    height: 350px;
     margin: auto;
     width: 100%;
     /* background-image: url("http://localhost:3000/bg.png"); */
@@ -174,5 +175,9 @@
         height: 300px;
         width: 80vw;
         background-size: contain;
+    }
+
+    .cece .kanan .bgcover img {
+        height: 300px;
     }
 }
