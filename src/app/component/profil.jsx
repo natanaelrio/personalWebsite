@@ -9,6 +9,8 @@ import { FaRegHandPeace } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function ProfilPage() {
+    console.log(process.env.NEXT_PUBLIC_URL)
+
     return (
         <div className={styles.cece}>
             <div className={styles.kiri}>
