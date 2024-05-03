@@ -1,0 +1,21 @@
+.main {
+    font-size: 1.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.isi {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .isi {
+        width: auto
+    }
+}

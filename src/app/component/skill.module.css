@@ -1,0 +1,49 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes drift {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.skill .isi {
+    gap: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.skill .isi .isislide {
+    animation: 15s drift infinite linear;
+    display: inline-block;
+}
+
+.skill .isi:hover .isislide {
+    animation-play-state: paused;
+}
+
+.icon {
+    font-size: 60px;
+    margin: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1140px) {
+    .skill .isi {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .icon {
+        font-size: 40px;
+        margin: 10px;
+    }
+}
