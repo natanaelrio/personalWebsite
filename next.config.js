@@ -12,7 +12,8 @@ const nextConfig = {
             'shop.forem.com',
             'images.unsplash.com',
             'picsum.photos',
-            'fastly.picsum.photos'
+            'fastly.picsum.photos',
+            'natanaelriowijaya.vercel.app'
         ],
     },
     async headers() {
