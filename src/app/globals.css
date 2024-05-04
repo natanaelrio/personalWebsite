@@ -17,7 +17,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #f6fbf7;
   color: #232124;
   font-size: 18px;
   scroll-behavior: smooth;
@@ -27,6 +26,8 @@ html,
 body {
   font-family: 'Montserrat', sans-serif !important;
   max-width: 100vw;
+  color: #232124;
+  background-color: #f6fbf7;
   /* overflow-x: hidden; */
 }
 

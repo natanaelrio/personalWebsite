@@ -25,6 +25,9 @@
     cursor: pointer;
 }
 
+.cece .icondownload {
+    background-color: var(--colorsatu);
+}
 
 .cece .tengah {
     display: flex;
@@ -33,9 +36,38 @@
     gap: 20px;
 }
 
-.cece .tengah .satu {
+.cece .atas {
     font-weight: 700;
     font-size: 3rem;
+}
+
+.cece .tengah .satu {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.cece .tengah .luarhello {
+    margin-right: 10px;
+    animation: 10s drift infinite normal none;
+}
+
+.cece .tengah .satu .hallo {
+    height: 20px;
+}
+
+@keyframes drift {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 .cece .tengah .dua {
@@ -82,10 +114,16 @@
     opacity: 1;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+    display: flex;
 }
 
 .cece .kanan .bgcover {
     height: 350px;
+    width: 350px;
+}
+
+.icontangan {
+    font-size: 40px;
 }
 
 .cece .kanan .bgcover img {
@@ -96,8 +134,8 @@
     -webkit-animation: liquid 7s ease-in-out infinite;
     animation: liquid 7s ease-in-out infinite;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-size: contain;
-    background-position: bottom;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: var(--colorgrey);
 }
@@ -119,6 +157,19 @@
     }
 }
 
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .cece .kanan .bgcover {
+        height: 300px;
+        width: 100%;
+    }
+
+    .cece .kanan .bgcover {
+        width: 300px;
+    }
+
+
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
 
@@ -150,6 +201,11 @@
         font-size: 2rem;
     }
 
+    .cece .atas {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .cece .tengah .dua {
         display: flex;
         justify-content: center;
@@ -173,11 +229,17 @@
 
     .cece .kanan .bgcover {
         height: 300px;
-        width: 80vw;
-        background-size: contain;
     }
 
     .cece .kanan .bgcover img {
         height: 300px;
+    }
+
+    .icontangan {
+        font-size: 30px;
+    }
+
+    .cece .tengah .satu {
+        width: 100%;
     }
 }
