@@ -26,6 +26,14 @@
     background-color: var(--colorsatu);
 }
 
+.kotak1 .gambar img {
+    width: 100%;
+    background-size: contain;
+    height: 150px;
+    border-radius: 8px;
+    background-color: var(--colorsatu);
+}
+
 .kotak1 .judul {
     font-weight: 500;
     background-color: transparent;
