@@ -19,12 +19,6 @@
     cursor: pointer;
 }
 
-.cece .kiri .icon2:hover {
-    transition: all ease 0.2s;
-    transform: translateY(-3px);
-    cursor: pointer;
-}
-
 .cece .icondownload {
     background-color: var(--colorsatu);
 }

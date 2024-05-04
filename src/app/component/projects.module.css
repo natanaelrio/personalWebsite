@@ -24,6 +24,12 @@
     height: 150px;
     border-radius: 8px;
     background-color: var(--colorsatu);
+    filter: grayscale(1);
+}
+
+.kotak1:hover .gambar {
+    transition: all ease 0.3s;
+    filter: grayscale(0);
 }
 
 .kotak1 .gambar img {

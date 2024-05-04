@@ -4,9 +4,10 @@ import styles from '@/app/component/profil.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaInstagram } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa";
 import { FaRegHandPeace } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ProfilPage() {
 
@@ -17,7 +18,10 @@ export default function ProfilPage() {
                     <FaInstagram size={30} className={styles.icon} />
                 </Link>
                 <Link target='_blank' href={'https://github.com/natanaelrio'} >
-                    <FaGithub size={30} className={styles.icon2} />
+                    <FiGithub size={30} className={styles.icon} />
+                </Link>
+                <Link target='_blank' href={'https://wa.me/+628971041460'} >
+                    <FaWhatsapp size={30} className={styles.icon} />
                 </Link>
             </div>
             <div className={styles.tengah}>
@@ -48,7 +52,7 @@ export default function ProfilPage() {
                 </div>
                 <div className={styles.tiga}>i'am Front End Developer in Salatiga, i'am very passionate and dedicated to my work.</div>
                 <div className={styles.empat}>
-                    <button>Contact Info</button>
+                    <button>  <Link href={'https://wa.me/+628971041460'} >Contact Info</Link></button>
                     <button>Download CV &nbsp; <MdOutlineFileDownload className={styles.icondownload} /></button>
                 </div>
             </div>
