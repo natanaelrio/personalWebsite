@@ -1,18 +1,33 @@
 
-import LayoutHeaderFooter from '@/app/component/layoutHeaderFooter'
-import ProfilPage from "@/app/component/profil";
-import ScroolDown from "@/app/component/scrooldown";
-import Skill from "@/app/component/skill";
-import Project from "@/app/component/projects";
+import LayoutHeaderFooter from '@/component/layoutHeaderFooter'
+import ProfilPage from "@/component/profil";
+import ScroolDown from "@/component/scrooldown";
+import Skill from "@/component/skill";
+import Project from "@/component/projects";
+export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: 'Natanael Rio Wijaya',
   description: 'Portofolio Natanael Rio Wijaya',
 }
+export async function AmbilView() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-viewproduct?id=1`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': process.env.NEXT_PUBLIC_SECREET
+    },
+    next: { revalidate: 0 }
+  })
 
-export default function Home() {
+  return res.json()
+
+}
+
+export default async function Home() {
+  const dataID = await AmbilView()
   return (
-    <LayoutHeaderFooter>
+    <LayoutHeaderFooter view={dataID.data[0].view_barang}>
       <ProfilPage />
       <ScroolDown />
       <Skill />
