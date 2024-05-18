@@ -4,7 +4,7 @@ import ProfilPage from "@/component/profil";
 import ScroolDown from "@/component/scrooldown";
 import Skill from "@/component/skill";
 import Project from "@/component/projects";
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: 'Natanael Rio Wijaya',
