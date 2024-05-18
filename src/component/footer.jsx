@@ -25,14 +25,21 @@ export default function FooterPage() {
                 next: { revalidate: 0 }
             })
             const data = await res.json()
-            setView(data?.data[0]?.view_barang)
+            setView(data)
         }
         fetchdata()
     }, [])
 
+
     return (
         <footer className={styles.footer}>
-            <div className={styles.kiri}>© with ❤️ Natanael Rio Wijaya ({view})</div>
+            <div className={styles.kiri}>© with ❤️ Natanael Rio Wijaya ({
+                view.data?.map((data, i) => {
+                    return (
+                        <span key={i}>{data.view_barang ? data.view_barang : '...'}</span>
+                    )
+                })
+            })</div>
             <div className={styles.kanan}>
                 <Link href={'https://github.com/natanaelrio'} >
                     <FaInstagramSquare size={30} className={styles.icon} />
