@@ -30,7 +30,8 @@ export default function FooterPage() {
         fetchdata()
     }, [])
 
-    const TotalView = view?.data[0].view_barang
+    // const TotalView = view?.data[0].view_barang
+    const TotalView = 1
     return (
         <footer className={styles.footer}>
             <div className={styles.kiri}>© with ❤️ Natanael Rio Wijaya ({TotalView})</div>
