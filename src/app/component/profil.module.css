@@ -188,13 +188,6 @@
         justify-content: center;
     }
 
-    .cece .tengah .satu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-    }
-
     .cece .atas {
         font-size: 2rem;
         text-align: center;
@@ -235,5 +228,9 @@
 
     .cece .tengah .satu {
         width: 100%;
+    }
+
+    .cece .tengah .luarhello {
+        margin-right: 0;
     }
 }
