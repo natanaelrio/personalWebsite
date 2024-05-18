@@ -15,8 +15,8 @@ export default function FooterPage() {
 
     const [view, setView] = useState([])
     useEffect(() => {
-        const fetchdata = async () => {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-viewproduct?id=1`, {
+        const fetchData = async () => {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-viewclient?id=1`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -27,14 +27,15 @@ export default function FooterPage() {
             const data = await res.json()
             setView(data)
         }
-        fetchdata()
+        fetchData()
     }, [])
 
 
     return (
         <footer className={styles.footer}>
             <div className={styles.kiri}>© with ❤️ Natanael Rio Wijaya ({
-                view.data?.map((data, i) => {
+                view?.data?.map((data, i) => {
+                    console.log(data.view_barang)
                     return (
                         <span key={i}>{data.view_barang ? data.view_barang : '...'}</span>
                     )
