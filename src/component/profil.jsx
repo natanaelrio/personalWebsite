@@ -52,7 +52,11 @@ export default function ProfilPage() {
                 <div className={styles.tiga}>i'am Front End Developer in Salatiga, i'am very passionate and dedicated to my work.</div>
                 <div className={styles.empat}>
                     <button>  <Link href={'https://wa.me/+628971041460'} >Contact Info</Link></button>
-                    <button>Download CV &nbsp; <MdOutlineFileDownload className={styles.icondownload} /></button>
+                    <button>
+                        <Link target='_blank' href={`${process.env.NEXT_PUBLIC_URL}/CV-NATANAELRIOWIJAYA.pdf`} >
+                            Download CV &nbsp; <MdOutlineFileDownload className={styles.icondownload} />
+                        </Link>
+                    </button>
                 </div>
             </div>
             <div className={styles.kanan}>

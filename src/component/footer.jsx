@@ -21,8 +21,7 @@ export default function FooterPage() {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': process.env.NEXT_PUBLIC_SECREET
-                },
-                next: { revalidate: 0 }
+                }
             })
             const data = await res.json()
             setView(data)
@@ -35,9 +34,9 @@ export default function FooterPage() {
         <footer className={styles.footer}>
             <div className={styles.kiri}>© with ❤️ Natanael Rio Wijaya ({
                 view?.data?.map((data, i) => {
-                    console.log(data.view_barang)
+                    console.log(data?.view_barang)
                     return (
-                        <span key={i}>{data.view_barang ? data.view_barang : '...'}</span>
+                        <span key={i}>{data?.view_barang ? data?.view_barang : '...'}</span>
                     )
                 })
             })</div>
