@@ -27,6 +27,15 @@ export default function Project() {
                 </Link>
                 <div className={styles.kotak1}>
                     <div className={styles.gambar}>
+                        <Image src={`${process.env.NEXT_PUBLIC_URL}/genZRespiratory.png`} alt='genZRespiratory' width={500} height={350} ></Image>
+                    </div>
+                    <div className={styles.judul}>genZRespiratory</div>
+                    <div className={styles.deskripsi}>
+                        Situs Pendidikan SD, belajar tentang organ sistem pernapasan dan alur pernapasan pada manusia, yang terdapat soal dan materi untuk anak-anak.
+                    </div>
+                </div>
+                <div className={styles.kotak1}>
+                    <div className={styles.gambar}>
                         <Image src={`${process.env.NEXT_PUBLIC_URL}/araBarber.png`} alt='araBarber' width={500} height={350} ></Image>
                     </div>
                     <div className={styles.judul}>Ara BarberShop</div>
@@ -42,11 +51,6 @@ export default function Project() {
                     <div className={styles.deskripsi}>
                         DuaTeman menyediakan review, analisis, dan berita, sementara komik menawarkan hiburan bagi pengguna.
                     </div>
-                </div>
-                <div className={styles.kotak1}>
-                    <div className={styles.gambar}></div>
-                    <div className={styles.judul}>Personal Website</div>
-                    <div className={styles.deskripsi}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, saepe.</div>
                 </div>
             </div>
         </div>
