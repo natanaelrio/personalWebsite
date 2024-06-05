@@ -41,10 +41,10 @@ export default function FooterPage() {
                 })
             })</div>
             <div className={styles.kanan}>
-                <Link href={'https://github.com/natanaelrio'} >
+                <Link href={'https://www.instagram.com/natanaelriowijaya/'} >
                     <FaInstagramSquare size={30} className={styles.icon} />
                 </Link>
-                <Link href={'https://www.instagram.com/natanaelriowijaya/'} >
+                <Link href={'https://github.com/natanaelrio'} >
                     <FaGithub size={30} className={styles.icon} />
                 </Link>
                 <Link href={'https://wa.me/+628971041460'} >
